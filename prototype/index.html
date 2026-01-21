@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stripe Dashboard - Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dashboard Shell -->
+    <div class="dashboard">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="account-header">
+                    <div class="account-avatar">
+                        <span class="material-symbols-outlined avatar-icon">potted_plant</span>
+                    </div>
+                    <span class="account-name">Cactus Practice</span>
+                </div>
+            </div>
+            <!-- Atlas Navigation -->
+            <nav class="nav" id="atlas-nav">
+                <a href="#" class="nav-item active">
+                    <span class="material-symbols-outlined nav-icon">home</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">account_balance</span>
+                    <span>Balances</span>
+                </a>
+
+                <div class="nav-section-header">Shortcuts</div>
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-item" id="atlas-shortcut">
+                        <span class="material-symbols-outlined nav-icon">rocket_launch</span>
+                        <span>Atlas</span>
+                        <span class="material-symbols-outlined nav-chevron-small">expand_more</span>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#" class="nav-dropdown-item" data-product="atlas">Atlas</a>
+                        <a href="#" class="nav-dropdown-item" data-product="financial-accounts">Financial accounts</a>
+                        <a href="#" class="nav-dropdown-item" data-product="stripe-apps">Apps</a>
+                    </div>
+                </div>
+
+                <div class="nav-section-header">Products</div>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">credit_card</span>
+                    <span>Payments</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">receipt_long</span>
+                    <span>Billing</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">bar_chart</span>
+                    <span>Reporting</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">more_horiz</span>
+                    <span>More</span>
+                    <span class="material-symbols-outlined nav-chevron">expand_more</span>
+                </a>
+            </nav>
+
+            <!-- Financial Accounts Navigation -->
+            <nav class="nav" id="financial-accounts-nav" style="display: none;">
+                <a href="#" class="nav-item active">
+                    <span class="material-symbols-outlined nav-icon">home</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">account_balance</span>
+                    <span>Balances</span>
+                </a>
+
+                <div class="nav-section-header">Shortcuts</div>
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-item" id="financial-accounts-shortcut">
+                        <span class="material-symbols-outlined nav-icon">rocket_launch</span>
+                        <span>Financial accounts</span>
+                        <span class="material-symbols-outlined nav-chevron-small">expand_more</span>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#" class="nav-dropdown-item" data-product="atlas">Atlas</a>
+                        <a href="#" class="nav-dropdown-item" data-product="financial-accounts">Financial accounts</a>
+                        <a href="#" class="nav-dropdown-item" data-product="stripe-apps">Apps</a>
+                    </div>
+                </div>
+
+                <div class="nav-section-header">Products</div>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">credit_card</span>
+                    <span>Payments</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">receipt_long</span>
+                    <span>Billing</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">bar_chart</span>
+                    <span>Reporting</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">more_horiz</span>
+                    <span>More</span>
+                    <span class="material-symbols-outlined nav-chevron">expand_more</span>
+                </a>
+            </nav>
+
+            <!-- Stripe Apps Navigation -->
+            <nav class="nav" id="stripe-apps-nav" style="display: none;">
+                <a href="#" class="nav-item active">
+                    <span class="material-symbols-outlined nav-icon">home</span>
+                    <span>Home</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">account_balance</span>
+                    <span>Balances</span>
+                </a>
+
+                <div class="nav-section-header">Shortcuts</div>
+                <div class="nav-item-dropdown">
+                    <a href="#" class="nav-item" id="stripe-apps-shortcut">
+                        <span class="material-symbols-outlined nav-icon">rocket_launch</span>
+                        <span>Apps</span>
+                        <span class="material-symbols-outlined nav-chevron-small">expand_more</span>
+                    </a>
+                    <div class="nav-dropdown-menu">
+                        <a href="#" class="nav-dropdown-item" data-product="atlas">Atlas</a>
+                        <a href="#" class="nav-dropdown-item" data-product="financial-accounts">Financial accounts</a>
+                        <a href="#" class="nav-dropdown-item" data-product="stripe-apps">Apps</a>
+                    </div>
+                </div>
+
+                <div class="nav-section-header">Products</div>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">credit_card</span>
+                    <span>Payments</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">receipt_long</span>
+                    <span>Billing</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">bar_chart</span>
+                    <span>Reporting</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">more_horiz</span>
+                    <span>More</span>
+                    <span class="material-symbols-outlined nav-chevron">expand_more</span>
+                </a>
+
+                <div class="nav-spacer"></div>
+
+                <a href="#" class="nav-item">
+                    <span class="material-symbols-outlined nav-icon">code</span>
+                    <span>Developers</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <div class="search-container">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                        <input type="text" class="search-input" placeholder="Search">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="header-icon-btn" title="Test mode">
+                        <span class="material-symbols-outlined">verified_user</span>
+                    </button>
+                    <button class="header-icon-btn" title="Apps">
+                        <span class="material-symbols-outlined">apps</span>
+                    </button>
+                    <button class="header-icon-btn" title="Developers">
+                        <span class="material-symbols-outlined">code</span>
+                    </button>
+                    <button class="header-icon-btn" title="Extensions">
+                        <span class="material-symbols-outlined">extension</span>
+                    </button>
+                    <button class="header-icon-btn" title="Help">
+                        <span class="material-symbols-outlined">help</span>
+                    </button>
+                    <button class="header-icon-btn" title="Notifications">
+                        <span class="material-symbols-outlined">notifications</span>
+                    </button>
+                    <button class="header-icon-btn" title="Settings">
+                        <span class="material-symbols-outlined">settings</span>
+                    </button>
+                    <button class="header-icon-btn header-new-btn" title="Create">
+                        <span class="material-symbols-outlined">add</span>
+                    </button>
+                </div>
+            </header>
+
+            <!-- Content Area -->
+            <div class="content">
+                <!-- Atlas View -->
+                <div id="atlas-view" class="customer-view active">
+                    <h2 class="section-title">Today</h2>
+
+                    <div class="modules-grid">
+                        <!-- Company Setup Progress -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Company Setup Progress</h3>
+                                <span class="badge badge-info">4 of 6 complete</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 66%"></div>
+                                </div>
+                                <div class="progress-steps">
+                                    <div class="step completed">
+                                        <div class="step-icon">✓</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Company Incorporated</div>
+                                            <div class="step-date">Completed Dec 15, 2025</div>
+                                        </div>
+                                    </div>
+                                    <div class="step completed">
+                                        <div class="step-icon">✓</div>
+                                        <div class="step-info">
+                                            <div class="step-title">EIN Received</div>
+                                            <div class="step-date">Completed Dec 22, 2025</div>
+                                        </div>
+                                    </div>
+                                    <div class="step completed">
+                                        <div class="step-icon">✓</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Bank Account Connected</div>
+                                            <div class="step-date">Completed Jan 5, 2026</div>
+                                        </div>
+                                    </div>
+                                    <div class="step completed">
+                                        <div class="step-icon">✓</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Operating Agreement Filed</div>
+                                            <div class="step-date">Completed Jan 12, 2026</div>
+                                        </div>
+                                    </div>
+                                    <div class="step active">
+                                        <div class="step-icon">→</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Tax Elections (83(b))</div>
+                                            <div class="step-date">In Progress</div>
+                                        </div>
+                                    </div>
+                                    <div class="step pending">
+                                        <div class="step-icon">○</div>
+                                        <div class="step-info">
+                                            <div class="step-title">Annual Report Setup</div>
+                                            <div class="step-date">Not Started</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-dark">Continue Setup →</button>
+                            </div>
+                        </div>
+
+                        <!-- Compliance Dashboard -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Compliance & Deadlines</h3>
+                                <span class="badge badge-warning">2 upcoming</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="compliance-item urgent">
+                                    <span class="material-symbols-outlined compliance-icon">warning</span>
+                                    <div class="compliance-info">
+                                        <div class="compliance-title">Federal Tax Filing</div>
+                                        <div class="compliance-date">Due in 14 days</div>
+                                    </div>
+                                    <button class="btn-link">File Now</button>
+                                </div>
+                                <div class="compliance-item">
+                                    <span class="material-symbols-outlined compliance-icon">description</span>
+                                    <div class="compliance-info">
+                                        <div class="compliance-title">Delaware Annual Report</div>
+                                        <div class="compliance-date">Due March 1, 2026</div>
+                                    </div>
+                                    <button class="btn-link">View Details</button>
+                                </div>
+                                <div class="compliance-item">
+                                    <span class="material-symbols-outlined compliance-icon">check_circle</span>
+                                    <div class="compliance-info">
+                                        <div class="compliance-title">State Tax Registration</div>
+                                        <div class="compliance-date">Completed</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="view-all-link">View all compliance items →</a>
+                            </div>
+                        </div>
+
+                        <!-- START ACCEPTING PAYMENTS (Marketing Module) -->
+                        <div class="module marketing-module">
+                            <div class="module-header">
+                                <h3>Start Accepting Payments</h3>
+                                <span class="badge badge-success">Recommended</span>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Ready to accept your first payment?</p>
+                                <p class="marketing-description">97% of Atlas companies use Stripe Payments to get paid. Start generating revenue quickly with flexible integration options.</p>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">bolt</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Quick Setup</div>
+                                            <div class="feature-desc">Get started in 5 minutes</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">link</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">No-Code Options</div>
+                                            <div class="feature-desc">Payment Links & Checkout</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">public</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Global Reach</div>
+                                            <div class="feature-desc">135+ currencies, 195+ countries</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary">Get Started with Payments →</button>
+                            </div>
+                        </div>
+
+                        <!-- Document Vault -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Document Vault</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="document-list">
+                                    <div class="document-item">
+                                        <span class="material-symbols-outlined doc-icon">description</span>
+                                        <div class="doc-info">
+                                            <div class="doc-name">Certificate of Incorporation</div>
+                                            <div class="doc-meta">Added Dec 15, 2025</div>
+                                        </div>
+                                        <button class="btn-icon"><span class="material-symbols-outlined">download</span></button>
+                                    </div>
+                                    <div class="document-item">
+                                        <span class="material-symbols-outlined doc-icon">description</span>
+                                        <div class="doc-info">
+                                            <div class="doc-name">EIN Confirmation Letter</div>
+                                            <div class="doc-meta">Added Dec 22, 2025</div>
+                                        </div>
+                                        <button class="btn-icon"><span class="material-symbols-outlined">download</span></button>
+                                    </div>
+                                    <div class="document-item">
+                                        <span class="material-symbols-outlined doc-icon">description</span>
+                                        <div class="doc-info">
+                                            <div class="doc-name">Operating Agreement</div>
+                                            <div class="doc-meta">Added Jan 12, 2026</div>
+                                        </div>
+                                        <button class="btn-icon"><span class="material-symbols-outlined">download</span></button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-secondary">Upload Document</button>
+                            </div>
+                        </div>
+
+                        <!-- Business Health -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Business Health</h3>
+                                <span class="badge badge-success">Good Standing</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="health-item">
+                                    <div class="health-label">Entity Status</div>
+                                    <div class="health-value success">Active - Delaware</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">Registered Agent</div>
+                                    <div class="health-value success">Active</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">Banking Connection</div>
+                                    <div class="health-value success">Connected</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">Compliance Score</div>
+                                    <div class="health-value">92/100</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- SUBSCRIPTION BILLING (Marketing Module) -->
+                        <div class="module marketing-module">
+                            <div class="module-header">
+                                <h3>Subscription Billing for SaaS</h3>
+                                <span class="badge badge-info">For SaaS founders</span>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Building a SaaS product? Manage subscriptions with Billing</p>
+                                <p class="marketing-description">Handle trials, upgrades, and renewals automatically. Used by thousands of Atlas companies for subscription management.</p>
+
+                                <div class="marketing-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">2,847</div>
+                                        <div class="stat-label">Atlas companies using Billing</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">99.9%</div>
+                                        <div class="stat-label">Uptime guarantee</div>
+                                    </div>
+                                </div>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">autorenew</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Recurring Billing</div>
+                                            <div class="feature-desc">Automate monthly, annual, and custom cycles</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">trending_up</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Usage-Based Pricing</div>
+                                            <div class="feature-desc">Bill based on consumption or seats</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">refresh</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Failed Payment Recovery</div>
+                                            <div class="feature-desc">Automatically retry failed charges</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary">Explore Billing →</button>
+                            </div>
+                        </div>
+
+                        <!-- Founder Resources -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Resources for You</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="resources-grid">
+                                    <div class="resource-card">
+                                        <span class="material-symbols-outlined resource-icon">menu_book</span>
+                                        <div class="resource-title">Tax Guide for Startups</div>
+                                        <div class="resource-desc">Essential tax considerations for your first year</div>
+                                        <a href="#" class="btn-link">Read Guide →</a>
+                                    </div>
+                                    <div class="resource-card">
+                                        <span class="material-symbols-outlined resource-icon">groups</span>
+                                        <div class="resource-title">Founder Community</div>
+                                        <div class="resource-desc">Connect with 50,000+ Atlas founders</div>
+                                        <a href="#" class="btn-link">Join Now →</a>
+                                    </div>
+                                    <div class="resource-card">
+                                        <span class="material-symbols-outlined resource-icon">handshake</span>
+                                        <div class="resource-title">Partner Directory</div>
+                                        <div class="resource-desc">Find legal, accounting, and banking partners</div>
+                                        <a href="#" class="btn-link">Browse Partners →</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Accounts View -->
+                <div id="financial-accounts-view" class="customer-view">
+                    <h2 class="section-title">Today</h2>
+
+                    <div class="modules-grid">
+                        <!-- Account Overview -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Account Overview</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="metrics-row">
+                                    <div class="metric">
+                                        <div class="metric-label">Total Balance</div>
+                                        <div class="metric-value large">$2,847,392.50</div>
+                                        <div class="metric-change positive">+12.3% from last month</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">Active Accounts</div>
+                                        <div class="metric-value">1,247</div>
+                                        <div class="metric-change positive">+43 this week</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">Account Holders</div>
+                                        <div class="metric-value">892</div>
+                                        <div class="metric-change positive">+28 this week</div>
+                                    </div>
+                                </div>
+                                <div class="chart-placeholder">
+                                    <div class="chart-bars">
+                                        <div class="bar" style="height: 45%"></div>
+                                        <div class="bar" style="height: 62%"></div>
+                                        <div class="bar" style="height: 58%"></div>
+                                        <div class="bar" style="height: 71%"></div>
+                                        <div class="bar" style="height: 68%"></div>
+                                        <div class="bar" style="height: 85%"></div>
+                                        <div class="bar" style="height: 92%"></div>
+                                    </div>
+                                    <div class="chart-label">Account growth - Last 7 days</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transaction Activity -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Transaction Activity</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="metrics-row">
+                                    <div class="metric">
+                                        <div class="metric-label">Today's Volume</div>
+                                        <div class="metric-value">$487,293</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">Transaction Count</div>
+                                        <div class="metric-value">2,847</div>
+                                    </div>
+                                </div>
+                                <div class="transaction-list">
+                                    <div class="transaction-item">
+                                        <div class="tx-icon success">↓</div>
+                                        <div class="tx-info">
+                                            <div class="tx-title">ACH Credit</div>
+                                            <div class="tx-meta">2 minutes ago • acc_1234</div>
+                                        </div>
+                                        <div class="tx-amount positive">+$5,420.00</div>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="tx-icon">↑</div>
+                                        <div class="tx-info">
+                                            <div class="tx-title">Wire Transfer</div>
+                                            <div class="tx-meta">15 minutes ago • acc_5678</div>
+                                        </div>
+                                        <div class="tx-amount">-$12,850.00</div>
+                                    </div>
+                                    <div class="transaction-item">
+                                        <div class="tx-icon success">↓</div>
+                                        <div class="tx-info">
+                                            <div class="tx-title">ACH Credit</div>
+                                            <div class="tx-meta">1 hour ago • acc_9012</div>
+                                        </div>
+                                        <div class="tx-amount positive">+$3,275.50</div>
+                                    </div>
+                                </div>
+                                <a href="#" class="view-all-link">View all transactions →</a>
+                            </div>
+                        </div>
+
+                        <!-- Card Program Metrics -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Card Program</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="metrics-row">
+                                    <div class="metric">
+                                        <div class="metric-label">Active Cards</div>
+                                        <div class="metric-value">3,492</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">Authorization Rate</div>
+                                        <div class="metric-value">98.7%</div>
+                                    </div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Card Spend (30 days)</div>
+                                    <div class="metric-value">$1,247,832.00</div>
+                                    <div class="metric-change positive">+18.4% vs. previous period</div>
+                                </div>
+                                <div class="spending-categories">
+                                    <div class="category-item">
+                                        <div class="category-label">Retail</div>
+                                        <div class="category-bar">
+                                            <div class="category-fill" style="width: 65%"></div>
+                                        </div>
+                                        <div class="category-value">$811,091</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <div class="category-label">Dining</div>
+                                        <div class="category-bar">
+                                            <div class="category-fill" style="width: 25%"></div>
+                                        </div>
+                                        <div class="category-value">$311,958</div>
+                                    </div>
+                                    <div class="category-item">
+                                        <div class="category-label">Other</div>
+                                        <div class="category-bar">
+                                            <div class="category-fill" style="width: 10%"></div>
+                                        </div>
+                                        <div class="category-value">$124,783</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Compliance Queue -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Compliance Queue</h3>
+                                <span class="badge badge-warning">12 pending</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="queue-item">
+                                    <span class="material-symbols-outlined queue-icon warning">schedule</span>
+                                    <div class="queue-info">
+                                        <div class="queue-title">KYC Verification</div>
+                                        <div class="queue-meta">8 accounts pending review</div>
+                                    </div>
+                                    <button class="btn-link">Review</button>
+                                </div>
+                                <div class="queue-item">
+                                    <span class="material-symbols-outlined queue-icon">warning</span>
+                                    <div class="queue-info">
+                                        <div class="queue-title">Risk Alerts</div>
+                                        <div class="queue-meta">4 accounts flagged</div>
+                                    </div>
+                                    <button class="btn-link">Review</button>
+                                </div>
+                                <div class="queue-item">
+                                    <span class="material-symbols-outlined queue-icon success">check_circle</span>
+                                    <div class="queue-info">
+                                        <div class="queue-title">Avg. Review Time</div>
+                                        <div class="queue-meta">2.3 hours (within SLA)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Liquidity Management -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Liquidity Management</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="liquidity-summary">
+                                    <div class="liquidity-item">
+                                        <div class="liquidity-label">Available Balance</div>
+                                        <div class="liquidity-value large">$2,247,392.50</div>
+                                    </div>
+                                    <div class="liquidity-item">
+                                        <div class="liquidity-label">Reserved Funds</div>
+                                        <div class="liquidity-value">$600,000.00</div>
+                                    </div>
+                                </div>
+                                <div class="liquidity-chart">
+                                    <div class="liquidity-bar">
+                                        <div class="liquidity-segment available" style="width: 78%"></div>
+                                        <div class="liquidity-segment reserved" style="width: 22%"></div>
+                                    </div>
+                                </div>
+                                <div class="scheduled-transfers">
+                                    <h4>Scheduled Transfers</h4>
+                                    <div class="transfer-item">
+                                        <div class="transfer-info">
+                                            <div class="transfer-title">Incoming ACH</div>
+                                            <div class="transfer-meta">Expected Jan 23</div>
+                                        </div>
+                                        <div class="transfer-amount positive">+$125,000.00</div>
+                                    </div>
+                                    <div class="transfer-item">
+                                        <div class="transfer-info">
+                                            <div class="transfer-title">Outgoing Wire</div>
+                                            <div class="transfer-meta">Scheduled Jan 24</div>
+                                        </div>
+                                        <div class="transfer-amount">-$50,000.00</div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-dark">Fund Account →</button>
+                            </div>
+                        </div>
+
+                        <!-- ACCEPT PAYMENTS (Marketing Module) -->
+                        <div class="module large marketing-module">
+                            <div class="module-header">
+                                <h3>Accept Payments from Your Users</h3>
+                                <span class="badge badge-success">Grow your platform</span>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Enable payments for your platform</p>
+                                <p class="marketing-description">Process payments alongside account management. Platforms using Financial Accounts + Payments process over $50B annually.</p>
+
+                                <div class="marketing-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">$50B+</div>
+                                        <div class="stat-label">Annual payment volume</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">2.9%</div>
+                                        <div class="stat-label">Industry-leading rates</div>
+                                    </div>
+                                </div>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">account_balance_wallet</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Marketplace Payments</div>
+                                            <div class="feature-desc">Split payments, manage platform fees automatically</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">language</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Global Payment Methods</div>
+                                            <div class="feature-desc">Cards, wallets, bank transfers in 195+ countries</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">verified_user</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Built-in Compliance</div>
+                                            <div class="feature-desc">PCI compliance, fraud detection, dispute management</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary">Explore Payments →</button>
+                            </div>
+                        </div>
+
+                        <!-- OPTIMIZE CASH WITH TREASURY (Marketing Module) -->
+                        <div class="module marketing-module">
+                            <div class="module-header">
+                                <h3>Optimize Cash with Treasury</h3>
+                                <span class="badge badge-success">Earn yield</span>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Earn 4.8% APY on your balance</p>
+                                <p class="marketing-description">Help your platform and users earn returns on idle cash with FDIC-insured yield-bearing accounts.</p>
+
+                                <div class="stat-item" style="margin-bottom: 16px; background: linear-gradient(135deg, #E0E7FF 0%, #C7D2FE 100%);">
+                                    <div class="stat-value" style="color: #4F46E5;">$112,370</div>
+                                    <div class="stat-label">Potential annual earnings on your current balance</div>
+                                </div>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">account_balance</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">FDIC Insurance</div>
+                                            <div class="feature-desc">Up to $3M per account holder</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">bolt</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Automated Sweeps</div>
+                                            <div class="feature-desc">Optimize yield without manual transfers</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary">Learn about Treasury →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stripe Apps View -->
+                <div id="stripe-apps-view" class="customer-view">
+                    <h2 class="section-title">Today</h2>
+
+                    <div class="modules-grid">
+                        <!-- Installed Apps Hub -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Installed Apps</h3>
+                                <span class="badge badge-info">8 active</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="apps-grid">
+                                    <div class="app-card">
+                                        <div class="app-icon" style="background: #00D4FF;">📊</div>
+                                        <div class="app-info">
+                                            <div class="app-name">Analytics Pro</div>
+                                            <div class="app-status success">Operational</div>
+                                        </div>
+                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    </div>
+                                    <div class="app-card">
+                                        <div class="app-icon" style="background: #FF6B6B;">🔔</div>
+                                        <div class="app-info">
+                                            <div class="app-name">Alert Manager</div>
+                                            <div class="app-status success">Operational</div>
+                                        </div>
+                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    </div>
+                                    <div class="app-card">
+                                        <div class="app-icon" style="background: #4ECDC4;">💰</div>
+                                        <div class="app-info">
+                                            <div class="app-name">Revenue Insights</div>
+                                            <div class="app-status warning">2 warnings</div>
+                                        </div>
+                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    </div>
+                                    <div class="app-card">
+                                        <div class="app-icon" style="background: #95E1D3;">📧</div>
+                                        <div class="app-info">
+                                            <div class="app-name">Email Automator</div>
+                                            <div class="app-status success">Operational</div>
+                                        </div>
+                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    </div>
+                                    <div class="app-card">
+                                        <div class="app-icon" style="background: #F38181;">🔒</div>
+                                        <div class="app-info">
+                                            <div class="app-name">Fraud Shield</div>
+                                            <div class="app-status success">Operational</div>
+                                        </div>
+                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    </div>
+                                    <div class="app-card">
+                                        <div class="app-icon" style="background: #AA96DA;">📝</div>
+                                        <div class="app-info">
+                                            <div class="app-name">Invoice Generator</div>
+                                            <div class="app-status success">Operational</div>
+                                        </div>
+                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    </div>
+                                </div>
+                                <button class="btn btn-secondary">Manage All Apps</button>
+                            </div>
+                        </div>
+
+                        <!-- Usage Insights -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Usage Insights</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="usage-item">
+                                    <div class="usage-rank">1</div>
+                                    <div class="usage-info">
+                                        <div class="usage-name">Analytics Pro</div>
+                                        <div class="usage-stat">Launched 142 times this month</div>
+                                    </div>
+                                </div>
+                                <div class="usage-item">
+                                    <div class="usage-rank">2</div>
+                                    <div class="usage-info">
+                                        <div class="usage-name">Revenue Insights</div>
+                                        <div class="usage-stat">Launched 89 times this month</div>
+                                    </div>
+                                </div>
+                                <div class="usage-item">
+                                    <div class="usage-rank">3</div>
+                                    <div class="usage-info">
+                                        <div class="usage-name">Fraud Shield</div>
+                                        <div class="usage-stat">Launched 67 times this month</div>
+                                    </div>
+                                </div>
+                                <div class="metric">
+                                    <div class="metric-label">Total App Interactions</div>
+                                    <div class="metric-value">1,247</div>
+                                    <div class="metric-change positive">+23% vs. last month</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- App Marketplace Discovery -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Recommended for You</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="marketplace-grid">
+                                    <div class="marketplace-card">
+                                        <div class="marketplace-icon" style="background: #FFD93D;">🎨</div>
+                                        <div class="marketplace-info">
+                                            <div class="marketplace-name">Custom Branding</div>
+                                            <div class="marketplace-desc">Personalize your checkout experience</div>
+                                            <div class="marketplace-meta">
+                                                <span class="rating">★★★★★ 4.8</span>
+                                                <span class="installs">12.4k installs</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn-primary btn-sm">Install</button>
+                                    </div>
+                                    <div class="marketplace-card">
+                                        <div class="marketplace-icon" style="background: #6BCB77;">🤖</div>
+                                        <div class="marketplace-info">
+                                            <div class="marketplace-name">AI Support Bot</div>
+                                            <div class="marketplace-desc">Automated customer support</div>
+                                            <div class="marketplace-meta">
+                                                <span class="rating">★★★★★ 4.6</span>
+                                                <span class="installs">8.2k installs</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn-primary btn-sm">Install</button>
+                                    </div>
+                                    <div class="marketplace-card">
+                                        <div class="marketplace-icon" style="background: #FF6B9D;">📈</div>
+                                        <div class="marketplace-info">
+                                            <div class="marketplace-name">Growth Optimizer</div>
+                                            <div class="marketplace-desc">Increase conversion rates with AI</div>
+                                            <div class="marketplace-meta">
+                                                <span class="rating">★★★★☆ 4.4</span>
+                                                <span class="installs">5.8k installs</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn-primary btn-sm">Install</button>
+                                    </div>
+                                </div>
+                                <a href="#" class="view-all-link">Browse all apps →</a>
+                            </div>
+                        </div>
+
+                        <!-- Developer Dashboard (if building apps) -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Your Published Apps</h3>
+                                <span class="badge badge-info">2 apps</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="developer-app">
+                                    <div class="dev-app-icon" style="background: #635BFF;">🚀</div>
+                                    <div class="dev-app-info">
+                                        <div class="dev-app-name">Payment Scheduler</div>
+                                        <div class="dev-app-stats">
+                                            <span>482 installs</span>
+                                            <span>★★★★★ 4.9</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-link">View Dashboard</button>
+                                </div>
+                                <div class="developer-app">
+                                    <div class="dev-app-icon" style="background: #00D4FF;">💼</div>
+                                    <div class="dev-app-info">
+                                        <div class="dev-app-name">Invoice Customizer</div>
+                                        <div class="dev-app-stats">
+                                            <span>1,247 installs</span>
+                                            <span>★★★★☆ 4.7</span>
+                                        </div>
+                                    </div>
+                                    <button class="btn-link">View Dashboard</button>
+                                </div>
+                                <div class="metrics-row">
+                                    <div class="metric">
+                                        <div class="metric-label">Total Installs</div>
+                                        <div class="metric-value">1,729</div>
+                                        <div class="metric-change positive">+143 this month</div>
+                                    </div>
+                                    <div class="metric">
+                                        <div class="metric-label">API Calls (30d)</div>
+                                        <div class="metric-value">847.2k</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Integration Health -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Integration Health</h3>
+                                <span class="badge badge-success">All systems operational</span>
+                            </div>
+                            <div class="module-content">
+                                <div class="health-item">
+                                    <div class="health-label">App Uptime (7d)</div>
+                                    <div class="health-value success">99.98%</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">Avg Response Time</div>
+                                    <div class="health-value">142ms</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">Error Rate</div>
+                                    <div class="health-value success">0.02%</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">Failed Requests (24h)</div>
+                                    <div class="health-value">0</div>
+                                </div>
+                                <a href="#" class="view-all-link">View detailed logs →</a>
+                            </div>
+                        </div>
+
+                        <!-- POWER YOUR APPS WITH PAYMENTS (Marketing Module) -->
+                        <div class="module large marketing-module">
+                            <div class="module-header">
+                                <h3>Power Your Apps with Payments</h3>
+                                <span class="badge badge-success">Recommended</span>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Accept payments in your workflow</p>
+                                <p class="marketing-description">Apps work better when integrated with payments. Process transactions, manage subscriptions, and handle refunds seamlessly.</p>
+
+                                <div class="marketing-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">85%</div>
+                                        <div class="stat-label">Of top apps use Payments</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">5 min</div>
+                                        <div class="stat-label">Average integration time</div>
+                                    </div>
+                                </div>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">integration_instructions</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Easy Integration</div>
+                                            <div class="feature-desc">SDKs for all major languages and frameworks</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">apps</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">App Ecosystem</div>
+                                            <div class="feature-desc">10+ marketplace apps integrate with Payments</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">dashboard</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Unified Dashboard</div>
+                                            <div class="feature-desc">Manage apps and payments in one place</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-primary">Start with Payments →</button>
+                            </div>
+                        </div>
+
+                        <!-- MANAGE SUBSCRIPTIONS WITH BILLING (Marketing Module) -->
+                        <div class="module marketing-module">
+                            <div class="module-header">
+                                <h3>Manage Subscriptions with Billing</h3>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Automate your subscription business</p>
+                                <p class="marketing-description">Perfect for SaaS products and membership sites. 10+ apps in the marketplace integrate with Billing.</p>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">autorenew</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Recurring Revenue</div>
+                                            <div class="feature-desc">Automatic billing for monthly, annual, or custom cycles</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">show_chart</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Usage-Based Pricing</div>
+                                            <div class="feature-desc">Bill customers based on consumption or seats</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">target</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Smart Retries</div>
+                                            <div class="feature-desc">Recover failed payments automatically</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary">Explore Billing →</button>
+                            </div>
+                        </div>
+
+                        <!-- PREVENT FRAUD WITH RADAR (Marketing Module) -->
+                        <div class="module marketing-module">
+                            <div class="module-header">
+                                <h3>Prevent Fraud with Radar</h3>
+                            </div>
+                            <div class="module-content">
+                                <p class="marketing-headline">Protect your business from fraud</p>
+                                <p class="marketing-description">Machine learning fraud detection that blocks fraudulent charges while optimizing for legitimate transactions.</p>
+
+                                <div class="marketing-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-value">$1.2B+</div>
+                                        <div class="stat-label">Blocked in fraud daily</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-value">80%</div>
+                                        <div class="stat-label">Average fraud reduction</div>
+                                    </div>
+                                </div>
+
+                                <div class="marketing-features">
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">psychology</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">ML-Powered Detection</div>
+                                            <div class="feature-desc">Learns from billions of transactions</div>
+                                        </div>
+                                    </div>
+                                    <div class="feature-item">
+                                        <span class="material-symbols-outlined feature-icon">tune</span>
+                                        <div class="feature-text">
+                                            <div class="feature-title">Custom Rules</div>
+                                            <div class="feature-desc">Create your own fraud prevention logic</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-secondary">Learn about Radar →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
