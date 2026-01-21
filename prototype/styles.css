@@ -1423,3 +1423,125 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* API Log Items */
+.api-log-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 6px;
+    transition: background 0.15s;
+    margin-bottom: 8px;
+    border: 1px solid #E3E8EE;
+}
+
+.api-log-item:hover {
+    background: #F7FAFC;
+}
+
+.api-log-method {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.api-log-info {
+    flex: 1;
+}
+
+.api-log-endpoint {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #0A2540;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.api-log-meta {
+    display: flex;
+    gap: 12px;
+    font-size: 12px;
+    color: #697386;
+}
+
+.api-log-status {
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.api-log-status.success {
+    color: #059669;
+    background: #D1FAE5;
+}
+
+.api-log-status.error {
+    color: #DC2626;
+    background: #FEE2E2;
+}
+
+/* Quota Items */
+.quota-item {
+    margin-bottom: 20px;
+}
+
+.quota-item:last-child {
+    margin-bottom: 0;
+}
+
+.quota-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.quota-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #425466;
+}
+
+.quota-value {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0A2540;
+    font-family: 'Courier New', monospace;
+}
+
+.quota-bar {
+    height: 8px;
+    background: #E3E8EE;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.quota-fill {
+    height: 100%;
+    transition: width 0.3s;
+    border-radius: 4px;
+}
+
+.quota-footer {
+    font-size: 12px;
+    color: #697386;
+}
+
+/* Stat Badges */
+.stat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: #F7FAFC;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #425466;
+    font-weight: 500;
+}

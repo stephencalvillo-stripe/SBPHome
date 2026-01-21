@@ -779,103 +779,218 @@
                     </div>
                 </div>
 
-                <!-- Stripe Apps View -->
+                <!-- Stripe Apps View (Developer-focused) -->
                 <div id="stripe-apps-view" class="customer-view">
                     <h2 class="section-title">Today</h2>
 
                     <div class="modules-grid">
-                        <!-- Installed Apps Hub -->
+                        <!-- API Request Volume -->
                         <div class="module large">
                             <div class="module-header">
-                                <h3>Installed Apps</h3>
-                                <span class="badge badge-info">8 active</span>
+                                <h3>API Request Volume</h3>
+                                <span class="badge badge-success">Live mode</span>
                             </div>
                             <div class="module-content">
-                                <div class="apps-grid">
-                                    <div class="app-card">
-                                        <div class="app-icon" style="background: #00D4FF;">📊</div>
-                                        <div class="app-info">
-                                            <div class="app-name">Analytics Pro</div>
-                                            <div class="app-status success">Operational</div>
-                                        </div>
-                                        <button class="btn-secondary btn-sm">Launch</button>
+                                <div class="metrics-row">
+                                    <div class="metric">
+                                        <div class="metric-label">Requests (24h)</div>
+                                        <div class="metric-value">847,234</div>
+                                        <div class="metric-change positive">+12.4% vs. yesterday</div>
                                     </div>
-                                    <div class="app-card">
-                                        <div class="app-icon" style="background: #FF6B6B;">🔔</div>
-                                        <div class="app-info">
-                                            <div class="app-name">Alert Manager</div>
-                                            <div class="app-status success">Operational</div>
-                                        </div>
-                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    <div class="metric">
+                                        <div class="metric-label">Requests (7d)</div>
+                                        <div class="metric-value">5.2M</div>
+                                        <div class="metric-change positive">+8.2% vs. last week</div>
                                     </div>
-                                    <div class="app-card">
-                                        <div class="app-icon" style="background: #4ECDC4;">💰</div>
-                                        <div class="app-info">
-                                            <div class="app-name">Revenue Insights</div>
-                                            <div class="app-status warning">2 warnings</div>
-                                        </div>
-                                        <button class="btn-secondary btn-sm">Launch</button>
-                                    </div>
-                                    <div class="app-card">
-                                        <div class="app-icon" style="background: #95E1D3;">📧</div>
-                                        <div class="app-info">
-                                            <div class="app-name">Email Automator</div>
-                                            <div class="app-status success">Operational</div>
-                                        </div>
-                                        <button class="btn-secondary btn-sm">Launch</button>
-                                    </div>
-                                    <div class="app-card">
-                                        <div class="app-icon" style="background: #F38181;">🔒</div>
-                                        <div class="app-info">
-                                            <div class="app-name">Fraud Shield</div>
-                                            <div class="app-status success">Operational</div>
-                                        </div>
-                                        <button class="btn-secondary btn-sm">Launch</button>
-                                    </div>
-                                    <div class="app-card">
-                                        <div class="app-icon" style="background: #AA96DA;">📝</div>
-                                        <div class="app-info">
-                                            <div class="app-name">Invoice Generator</div>
-                                            <div class="app-status success">Operational</div>
-                                        </div>
-                                        <button class="btn-secondary btn-sm">Launch</button>
+                                    <div class="metric">
+                                        <div class="metric-label">Success Rate</div>
+                                        <div class="metric-value">99.97%</div>
+                                        <div class="metric-change positive">Excellent</div>
                                     </div>
                                 </div>
-                                <button class="btn btn-secondary">Manage All Apps</button>
+
+                                <div class="chart-placeholder" style="margin-top: 20px; height: 120px; background: linear-gradient(to top, #E0E7FF 0%, transparent 100%); border-radius: 8px; position: relative;">
+                                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: #635BFF;"></div>
+                                    <svg viewBox="0 0 300 80" style="width: 100%; height: 100%;">
+                                        <polyline points="0,60 30,55 60,58 90,45 120,40 150,35 180,38 210,30 240,28 270,25 300,20"
+                                                  fill="none" stroke="#635BFF" stroke-width="2"/>
+                                    </svg>
+                                </div>
+
+                                <div class="metrics-row" style="margin-top: 16px;">
+                                    <div class="stat-badge">
+                                        <span class="material-symbols-outlined" style="font-size: 16px; color: #10B981;">trending_up</span>
+                                        <span>Peak: 42.3k req/hour</span>
+                                    </div>
+                                    <div class="stat-badge">
+                                        <span class="material-symbols-outlined" style="font-size: 16px; color: #635BFF;">schedule</span>
+                                        <span>Avg: 35.3k req/hour</span>
+                                    </div>
+                                </div>
+
+                                <a href="#" class="view-all-link">View detailed analytics →</a>
                             </div>
                         </div>
 
-                        <!-- Usage Insights -->
+                        <!-- API Performance & Errors -->
                         <div class="module">
                             <div class="module-header">
-                                <h3>Usage Insights</h3>
+                                <h3>API Performance</h3>
                             </div>
                             <div class="module-content">
-                                <div class="usage-item">
-                                    <div class="usage-rank">1</div>
-                                    <div class="usage-info">
-                                        <div class="usage-name">Analytics Pro</div>
-                                        <div class="usage-stat">Launched 142 times this month</div>
+                                <div class="health-item">
+                                    <div class="health-label">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 8px;">check_circle</span>
+                                        Success Rate
+                                    </div>
+                                    <div class="health-value success">99.97%</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 8px;">error</span>
+                                        Error Rate
+                                    </div>
+                                    <div class="health-value success">0.03%</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 8px;">speed</span>
+                                        Avg Response Time
+                                    </div>
+                                    <div class="health-value">247ms</div>
+                                </div>
+                                <div class="health-item">
+                                    <div class="health-label">
+                                        <span class="material-symbols-outlined" style="font-size: 18px; vertical-align: middle; margin-right: 8px;">timer</span>
+                                        P95 Response Time
+                                    </div>
+                                    <div class="health-value">892ms</div>
+                                </div>
+
+                                <div style="margin-top: 16px; padding: 12px; background: #FEF3C7; border-radius: 6px; border-left: 3px solid #F59E0B;">
+                                    <div style="font-size: 13px; font-weight: 600; color: #92400E; margin-bottom: 4px;">
+                                        <span class="material-symbols-outlined" style="font-size: 16px; vertical-align: middle;">warning</span>
+                                        254 errors in last 24h
+                                    </div>
+                                    <div style="font-size: 12px; color: #92400E;">
+                                        Most common: rate_limit_error (142)
                                     </div>
                                 </div>
-                                <div class="usage-item">
-                                    <div class="usage-rank">2</div>
-                                    <div class="usage-info">
-                                        <div class="usage-name">Revenue Insights</div>
-                                        <div class="usage-stat">Launched 89 times this month</div>
+
+                                <a href="#" class="view-all-link">View error logs →</a>
+                            </div>
+                        </div>
+
+                        <!-- Recent API Activity -->
+                        <div class="module large">
+                            <div class="module-header">
+                                <h3>Recent API Activity</h3>
+                                <button class="btn-link">View logs</button>
+                            </div>
+                            <div class="module-content">
+                                <div class="api-log-item">
+                                    <div class="api-log-method" style="background: #10B981; color: white;">POST</div>
+                                    <div class="api-log-info">
+                                        <div class="api-log-endpoint">/v1/payment_intents</div>
+                                        <div class="api-log-meta">
+                                            <span class="api-log-status success">200</span>
+                                            <span>324ms</span>
+                                            <span>2 seconds ago</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="usage-item">
-                                    <div class="usage-rank">3</div>
-                                    <div class="usage-info">
-                                        <div class="usage-name">Fraud Shield</div>
-                                        <div class="usage-stat">Launched 67 times this month</div>
+                                <div class="api-log-item">
+                                    <div class="api-log-method" style="background: #3B82F6; color: white;">GET</div>
+                                    <div class="api-log-info">
+                                        <div class="api-log-endpoint">/v1/customers/cus_abc123</div>
+                                        <div class="api-log-meta">
+                                            <span class="api-log-status success">200</span>
+                                            <span>142ms</span>
+                                            <span>5 seconds ago</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="metric">
-                                    <div class="metric-label">Total App Interactions</div>
-                                    <div class="metric-value">1,247</div>
-                                    <div class="metric-change positive">+23% vs. last month</div>
+                                <div class="api-log-item">
+                                    <div class="api-log-method" style="background: #10B981; color: white;">POST</div>
+                                    <div class="api-log-info">
+                                        <div class="api-log-endpoint">/v1/checkout/sessions</div>
+                                        <div class="api-log-meta">
+                                            <span class="api-log-status success">200</span>
+                                            <span>287ms</span>
+                                            <span>12 seconds ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="api-log-item">
+                                    <div class="api-log-method" style="background: #EF4444; color: white;">POST</div>
+                                    <div class="api-log-info">
+                                        <div class="api-log-endpoint">/v1/payment_intents</div>
+                                        <div class="api-log-meta">
+                                            <span class="api-log-status error">429</span>
+                                            <span>89ms</span>
+                                            <span>28 seconds ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="api-log-item">
+                                    <div class="api-log-method" style="background: #3B82F6; color: white;">GET</div>
+                                    <div class="api-log-info">
+                                        <div class="api-log-endpoint">/v1/payment_intents/pi_xyz789</div>
+                                        <div class="api-log-meta">
+                                            <span class="api-log-status success">200</span>
+                                            <span>156ms</span>
+                                            <span>35 seconds ago</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="view-all-link">View all requests →</a>
+                            </div>
+                        </div>
+
+                        <!-- Rate Limits & Quotas -->
+                        <div class="module">
+                            <div class="module-header">
+                                <h3>Rate Limits & Usage</h3>
+                            </div>
+                            <div class="module-content">
+                                <div class="quota-item">
+                                    <div class="quota-header">
+                                        <span class="quota-label">API Requests</span>
+                                        <span class="quota-value">847k / 1M</span>
+                                    </div>
+                                    <div class="quota-bar">
+                                        <div class="quota-fill" style="width: 84.7%; background: #10B981;"></div>
+                                    </div>
+                                    <div class="quota-footer">84.7% of daily limit</div>
+                                </div>
+
+                                <div class="quota-item">
+                                    <div class="quota-header">
+                                        <span class="quota-label">Webhook Events</span>
+                                        <span class="quota-value">124k / 500k</span>
+                                    </div>
+                                    <div class="quota-bar">
+                                        <div class="quota-fill" style="width: 24.8%; background: #3B82F6;"></div>
+                                    </div>
+                                    <div class="quota-footer">24.8% of daily limit</div>
+                                </div>
+
+                                <div class="quota-item">
+                                    <div class="quota-header">
+                                        <span class="quota-label">File Uploads</span>
+                                        <span class="quota-value">3.2 GB / 10 GB</span>
+                                    </div>
+                                    <div class="quota-bar">
+                                        <div class="quota-fill" style="width: 32%; background: #635BFF;"></div>
+                                    </div>
+                                    <div class="quota-footer">32% of monthly limit</div>
+                                </div>
+
+                                <div style="margin-top: 16px; padding: 10px; background: #E0E7FF; border-radius: 6px;">
+                                    <div style="font-size: 12px; color: #4F46E5;">
+                                        <span class="material-symbols-outlined" style="font-size: 14px; vertical-align: middle;">info</span>
+                                        Rate limits reset daily at midnight UTC
+                                    </div>
                                 </div>
                             </div>
                         </div>
