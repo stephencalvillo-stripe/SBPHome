@@ -201,7 +201,6 @@ body {
 /* Header */
 .header {
     background: white;
-    border-bottom: 1px solid #E3E8EE;
     padding: 12px 24px;
     display: flex;
     justify-content: space-between;
@@ -328,9 +327,24 @@ body {
     gap: 24px;
 }
 
+.module-group {
+    background: #F5F6F8;
+    border-radius: 8px;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8px;
+    grid-column: span 12;
+    margin-bottom: 16px;
+}
+
+.module-group:last-child {
+    margin-bottom: 0;
+}
+
 .module {
     background: white;
-    border-radius: 8px;
+    border-radius: 4px;
     border: 1px solid #E3E8EE;
     overflow: hidden;
     grid-column: span 6;
