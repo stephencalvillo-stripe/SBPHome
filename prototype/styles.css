@@ -1285,10 +1285,6 @@ body {
 }
 
 /* Compact Module */
-.module.compact {
-    grid-column: span 1;
-}
-
 .module.compact .module-header {
     padding: 14px 16px;
 }
