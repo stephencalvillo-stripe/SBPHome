@@ -371,7 +371,6 @@ body {
 
 .module-header {
     padding: 16px 20px;
-    border-bottom: 1px solid #E3E8EE;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1324,7 +1323,6 @@ body {
 
 .marketing-module .module-header {
     background: #FAFBFF;
-    border-bottom: 2px solid #E0E7FF;
 }
 
 /* Banner Style Marketing Module */
