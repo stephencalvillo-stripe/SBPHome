@@ -334,6 +334,7 @@ body {
     border: 1px solid #E3E8EE;
     overflow: hidden;
     grid-column: span 6;
+    max-height: 240px;
 }
 
 .module.large {
@@ -470,6 +471,7 @@ body {
 }
 
 .step-title {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 4px;
@@ -589,6 +591,7 @@ body {
 }
 
 .compliance-title {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 4px;
@@ -634,6 +637,7 @@ body {
 }
 
 .doc-name {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 2px;
@@ -697,6 +701,7 @@ body {
 }
 
 .resource-title {
+    font-size: 14px;
     font-weight: 600;
     color: #0A2540;
     margin-bottom: 8px;
@@ -777,7 +782,7 @@ body {
 
 .chart-label {
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     color: #425466;
 }
 
@@ -821,6 +826,7 @@ body {
 }
 
 .tx-title {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 2px;
@@ -910,6 +916,7 @@ body {
 }
 
 .queue-title {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 4px;
@@ -999,6 +1006,7 @@ body {
 }
 
 .transfer-title {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 2px;
@@ -1055,6 +1063,7 @@ body {
 }
 
 .app-name {
+    font-size: 14px;
     font-weight: 600;
     color: #0A2540;
     margin-bottom: 4px;
@@ -1106,6 +1115,7 @@ body {
 }
 
 .usage-name {
+    font-size: 14px;
     font-weight: 500;
     color: #0A2540;
     margin-bottom: 2px;
@@ -1156,7 +1166,7 @@ body {
     font-weight: 600;
     color: #0A2540;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .marketplace-desc {
@@ -1202,6 +1212,7 @@ body {
 }
 
 .dev-app-name {
+    font-size: 14px;
     font-weight: 600;
     color: #0A2540;
     margin-bottom: 4px;
@@ -1256,7 +1267,7 @@ body {
 
 .metric-card .metric-label {
     color: rgba(10, 37, 64, 0.7);
-    font-size: 13px;
+    font-size: 14px;
     margin-bottom: 8px;
 }
 
@@ -1354,7 +1365,7 @@ body {
 }
 
 .marketing-headline {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 600;
     color: #0A2540;
     margin-bottom: 8px;
@@ -1370,12 +1381,10 @@ body {
 
 /* Payments Promo Module */
 .payments-promo-module {
-    background: linear-gradient(135deg, #5B4DBB 0%, #4A3D9F 100%);
-    background-image:
-        radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-        linear-gradient(135deg, #5B4DBB 0%, #4A3D9F 100%);
-    background-size: 20px 20px, 100% 100%;
-    background-position: 0 0, 0 0;
+    background: #2F0E63;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0;
     border: none;
     overflow: visible;
 }
@@ -1558,7 +1567,7 @@ body {
 }
 
 .stat-label {
-    font-size: 12px;
+    font-size: 14px;
     color: #6B7280;
     line-height: 1.4;
 }
@@ -1714,7 +1723,7 @@ body {
 }
 
 .quota-label {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     color: #425466;
 }
