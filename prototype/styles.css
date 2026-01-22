@@ -345,7 +345,6 @@ body {
 .module {
     background: white;
     border-radius: 4px;
-    border: 1px solid #E3E8EE;
     overflow: hidden;
     grid-column: span 6;
     max-height: 300px;
@@ -604,13 +603,7 @@ body {
     align-items: center;
     gap: 12px;
     padding: 8px;
-    border-radius: 8px;
-    background: #F6F9FC;
     margin-bottom: 8px;
-}
-
-.compliance-item.urgent {
-    background: #FEF3C7;
 }
 
 .compliance-icon {
@@ -651,11 +644,11 @@ body {
 .document-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 8px;
+    gap: 8px;
+    padding: 4px;
     border-radius: 8px;
     transition: background 0.2s;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .document-item:hover {
