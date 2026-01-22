@@ -26,6 +26,17 @@ The current Stripe Dashboard Home page is optimized for Payments and Billing cus
 └── Screenshots/           # Reference screenshots from Stripe Dashboard
 ```
 
+## Design System
+
+This project uses a shared design system located at `/Users/stephencalvillo/stripe-design-system/` (separate git repository). The design system includes:
+
+- Color palette, typography, and spacing specifications
+- Component library (buttons, badges, modules, metrics)
+- 12-column grid system documentation
+- Interactive visual style guide with live examples
+
+This allows the design system to be reused across multiple projects while maintaining consistency.
+
 ## Key Features
 
 ### Strategic Framework
