@@ -347,7 +347,7 @@ body {
     border-radius: 4px;
     overflow: hidden;
     grid-column: span 6;
-    max-height: 300px;
+    max-height: 416px;
 }
 
 .module.large {
