@@ -450,6 +450,7 @@ body {
 .step {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 16px;
 }
 
@@ -464,10 +465,26 @@ body {
     flex-shrink: 0;
 }
 
+.step-icon-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.step-icon-right .material-symbols-outlined {
+    font-size: 16px;
+}
+
 .step.completed .step-icon {
     background: #10B981;
     color: white;
     font-size: 14px;
+}
+
+.step.completed .step-icon-right .material-symbols-outlined {
+    color: #10B981;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
 .step.active .step-icon {
@@ -475,9 +492,19 @@ body {
     color: #4F46E5;
 }
 
+.step.active .step-icon-right .material-symbols-outlined {
+    color: #94A3B8;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
 .step.pending .step-icon {
     background: #F1F5F9;
     color: #94A3B8;
+}
+
+.step.pending .step-icon-right .material-symbols-outlined {
+    color: #94A3B8;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
 .step-info {
